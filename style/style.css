@@ -1,0 +1,148 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    background-color: #050510;
+}
+
+#mask {
+    background-color: #000005;
+    color: #FFFFFF;
+    overflow: hidden;
+    width: 96%;
+    height:62vh;
+    margin:2%
+}
+
+
+#mask p, #mask h1{
+    background-color: #000005;
+    color: #FFFFFF;
+    overflow: hidden;
+    width: 100%;
+    font-family: fit;
+}
+
+.header {
+    justify-content: center;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    padding:2%;
+    background-image: url("../images/adrien.jpg");
+}
+
+.header p {
+    font-size:calc((5vw + 5vh)/2);
+    color: #FFFFFF;
+    font-family: alag;
+}
+
+#navhover {
+    font-family: fit;
+    color: #FFFFFF;
+}
+
+#navhover:hover {
+    color: #FF1010;
+    transform: scale(1.2);
+    transition: transform 150ms ease-in-out, color 150ms ease-in-out;
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:80%;
+    margin-right: 10%;
+    margin-left: 10%;
+    width:auto;
+    height:70vh;
+}
+
+#content {
+    width:70%;
+    color: #FFFFFF;
+    background-color: #000005;
+    font-family: fit;
+    padding: 1%;
+    font-size: calc((1.7vw + 1.7vh)/2);
+}
+
+#content p {
+    text-align: center;
+    color: #FFFFFF;
+    transition: color 150ms ease-in-out;
+    margin-top: 110%;
+    width: 100%;
+}
+
+#nav {
+    width: 17%;
+    background-color: black;
+    font-family: fit;
+    padding: 6vh;
+    font-size: calc((1.7vw + 1.7vh)/2);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.fadein {
+    animation: ease-in-out;
+    animation-duration: 1s;
+    animation-name: opacfade;
+}
+
+.fadenexo {
+    animation: ease-out;
+    animation-duration: 5s;
+    animation-name: nexopedia;
+}
+
+/* Font */
+
+@font-face {
+    font-family: alag;
+    src: url(../font/ALAGAMBE.otf);
+}
+
+@font-face {
+    font-family: fit;
+    src: url(../font/Outfit/Outfit-Light.ttf);
+}
+
+/* Animations */
+
+@keyframes opacfade {
+    0% {
+        filter: opacity(0);
+    }
+    100% {
+        filter: opacity(1);
+    }
+}
+
+@keyframes nexopedia {
+    0% {
+        color:#FF1010;
+    }
+    20% {
+        color: #FFFFFF;
+    }
+    40% {
+        color:#FF1010;
+    }
+    60% {
+        color: #FFFFFF;
+    }
+    80% {
+        color:#FF1010;
+    }
+    100%{
+        color: #FFFFFF;
+    }
+}
