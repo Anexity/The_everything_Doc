@@ -81,12 +81,12 @@ body {
 
 #nav {
     width: 17%;
-    background-color: black;
+    background-color: #000005;
     font-family: fit;
     padding: 6vh;
     font-size: calc((1.7vw + 1.7vh)/2);
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
     justify-content: center;
     align-items: center;
 }

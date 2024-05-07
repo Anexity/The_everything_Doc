@@ -3,11 +3,13 @@ function loadBlog() {
 }
 
 function loadIntel() {
-    let data = "This is a test"
-    document.getElementById("loader").innerHTML = data;
+    document.getElementById("loader").innerHTML = '<object class="fadein" id="mask" type="text/html" data="./sits/Cyber.html"></object>';
 }
 
 function loadDL() {
-    let data = "This is a test"
-    document.getElementById("loader").innerHTML = data;
+    document.getElementById("loader").innerHTML = '<object class="fadein" id="mask" type="text/html" data="./sits/DL.html"></object>';
+}
+
+function loadARM() {
+    document.getElementById("loader").innerHTML = '<object class="fadein" id="mask" type="text/html" data="./sits/Armageddon.html"></object>';
 }
