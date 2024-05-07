@@ -43,12 +43,13 @@ body {
 #navhover {
     font-family: fit;
     color: #FFFFFF;
+    transition: transform 180ms ease-in-out, color 180ms ease-in-out;
 }
 
 #navhover:hover {
     color: #FF1010;
-    transform: scale(1.2);
-    transition: transform 150ms ease-in-out, color 150ms ease-in-out;
+    transform: scale(1.1);
+    transition: transform 180ms ease-in-out, color 180ms ease-in-out;
 }
 
 .main {
